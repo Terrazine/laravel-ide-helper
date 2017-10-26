@@ -12,7 +12,8 @@
   "require": {
     "laravel/framework": "5.*",
     "terrazine/composer-events": "1.*",
-    "barryvdh/laravel-ide-helper": "^2.4"
+    "barryvdh/laravel-ide-helper": "^2.4",
+    "doctrine/dbal": "^2.6"
   },
   "autoload": {
     "psr-4": {
