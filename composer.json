@@ -25,7 +25,7 @@
     },
     "laravel": {
       "providers": [
-        "Terrazine\\ComposerEvents\\TerrazineLaravelIdeHelperServiceProvider"
+        "Terrazine\\LaravelIdeHelper\\TerrazineLaravelIdeHelperServiceProvider"
       ]
     }
   }
