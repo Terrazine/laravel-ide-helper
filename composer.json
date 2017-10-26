@@ -10,7 +10,9 @@
     }
   ],
   "require": {
-    "laravel/framework": "5.*"
+    "laravel/framework": "5.*",
+    "terrazine/composer-events": "1.*",
+    "barryvdh/laravel-ide-helper": "^2.4"
   },
   "autoload": {
     "psr-4": {
