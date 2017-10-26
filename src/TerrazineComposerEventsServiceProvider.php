@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
+use Terrazine\ComposerEvents\PostAutoloadDump;
 
 class TerrazineLaravelIdeHelperServiceProvider extends ServiceProvider
 {
