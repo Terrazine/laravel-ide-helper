@@ -1,0 +1,32 @@
+{
+  "name": "terrazine/laravel-ide-helper",
+  "description": "Wraps barryvdh/laravel-ide-helper for automated functionality.",
+  "type": "wrapper",
+  "license": "inherit",
+  "authors": [
+    {
+      "name": "Patrick 'Quezler' Mounier",
+      "email": "Quezler@me.com"
+    }
+  ],
+  "require": {
+    "laravel/framework": "5.*",
+    "terrazine/composer-events": "1.*",
+    "barryvdh/laravel-ide-helper": "^2.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Terrazine\\LaravelIdeHelper\\": "src/"
+    }
+  },
+  "extra": {
+    "terrazine": {
+      "human": "@see terrazine/slayn"
+    },
+    "laravel": {
+      "providers": [
+        "Terrazine\\ComposerEvents\\TerrazineLaravelIdeHelperServiceProvider"
+      ]
+    }
+  }
+}
