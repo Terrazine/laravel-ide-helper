@@ -1,6 +1,6 @@
 <?php
 
-namespace Terrazine\ComposerEvents;
+namespace Terrazine\LaravelIdeHelper;
 
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Event;
