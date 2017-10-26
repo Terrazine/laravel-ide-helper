@@ -37,8 +37,25 @@ class TerrazineLaravelIdeHelperServiceProvider extends ServiceProvider
                     ], $output);
                     Artisan::call('ide-helper:generate', [], $output);
                     Artisan::call('ide-helper:meta', [], $output);
+
+                    $this->ignore('.phpstorm.meta.php');
+                    $this->ignore('_ide_helper.php');
                 };
             });
+        }
+    }
+
+    public function gitignorePath(): string {
+        return base_path('.gitignore');
+    }
+
+    public function ignore(string $file) {
+        $gitignore = file_get_contents($this->gitignorePath());
+
+        preg_match_all("/^{$file}$/m", $gitignore, $matches);
+
+        if (empty($matches[0])) {
+            file_put_contents($this->gitignorePath(), $file . PHP_EOL, FILE_APPEND);
         }
     }
 }
