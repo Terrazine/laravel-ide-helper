@@ -11,7 +11,7 @@
   ],
   "require": {
     "laravel/framework": "5.*",
-    "terrazine/composer-events": "1.*",
+    "terrazine/composer-events": "2.*",
     "barryvdh/laravel-ide-helper": "^2.4",
     "doctrine/dbal": "^2.6"
   },
