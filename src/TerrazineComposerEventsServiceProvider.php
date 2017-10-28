@@ -40,6 +40,12 @@ class TerrazineLaravelIdeHelperServiceProvider extends ServiceProvider
 
                     $this->ignore('.phpstorm.meta.php');
                     $this->ignore('_ide_helper.php');
+
+                    file_put_contents(...[
+                        base_path('_ide_helper.php'),
+                        file_get_contents(__DIR__ . '/append.php.stub'),
+                        FILE_APPEND,
+                    ]);
                 };
             });
         }
